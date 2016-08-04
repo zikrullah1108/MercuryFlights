@@ -11,6 +11,7 @@ public class ConfirmationPage extends BasePage {
 	
 	public ConfirmationPage confirmNum()
 	{
+		//wait for the page load and verify the confirmation title
 		ul.fluentWait(confirmationNumber);
 		ul.verifyTitle(cpTitle);
 		ul.printText(confirmationNumber, "The confirmation number is: ");
